@@ -22,14 +22,13 @@ export const Contact = () => {
                 style={{
                     height: "330px",
                     imageOrientation: "from-image",
-                    width: "90vw",
+                    width: "80vw",
                     maxWidth: "500px"
                 }}
                 alt='contact-info-image'></img>
             </div>
         </div>
     </div>
-
     </>
   )
 }

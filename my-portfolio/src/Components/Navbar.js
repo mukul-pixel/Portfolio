@@ -31,7 +31,7 @@ export const Navbar = () => {
                     <a className="nav-link" href='#contactSection'>Contact</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href='#serviceSection'>Services</a>
+                    <a className="nav-link" href='#serviceSection'>Skills</a>
                 </li>
             </ul>
         </div>

@@ -30,7 +30,7 @@ export const Projects = () => {
         <>
             <div id='projectSection' className='project-heading-container px-md-5 py-5 px-3'>
                 <h2 className='heading-text'>Projects</h2>
-                <h1 className='project-heading-sub-text'>I Bring Results</h1>
+                <h1 className='project-heading-sub-text'>Implementing Solutions</h1>
             </div>
             <div className='project-wrapper p-4'>
             <div className="row px-md-5 py-5">
