@@ -40,6 +40,7 @@ export const Services = () => {
                 <li>React Js</li>
                 <li>Javascript</li>
                 <li>C++</li>
+                <li>Python</li>
                 <li>Golang</li>
                 <li>SQL</li>
                 <li>Node js</li>
