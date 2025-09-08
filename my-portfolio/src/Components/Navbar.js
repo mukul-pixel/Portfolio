@@ -3,7 +3,7 @@ import React from 'react'
 export const Navbar = () => {
   return (
     <>
-<nav className="navbar navbar-expand-lg bg-body-tertiary px-md-5 px-3 py-5 bg-white">
+<nav className="navbar navbar-expand-lg bg-body-tertiary px-md-5 px-2 py-3 bg-white">
     <div className="container-fluid">
         <span className="navbar-brand navbar-text-name">मुकुल खत्री</span>
         <button

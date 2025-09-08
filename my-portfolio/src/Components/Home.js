@@ -14,7 +14,7 @@ export const Home = () => {
         <div className='col-md-6 col-12 py-5 my-5'>
             <h1 className='heading-text py-3'>Hi! I'm Mukul Khatri</h1>
             <p className='py-3 fs-3'>Passionate Developer from India. I specialize in full-stack development, building scalable and user-friendly web applications. Combining technical expertise with creativity, to bring ideas to life and help businesses thrive.</p>
-            <a href='https://drive.google.com/file/d/1S-whOa-a7Mmc5OZFofcCZmZ35G8GhB8Q/view?usp=drive_link' className='resume-button text-decoration-none fw-bold'>
+            <a href='https://drive.google.com/file/d/1EvbHg9AlIzuolMpedWIbM2Uc3j9k3n1f/view?usp=sharing' className='resume-button text-decoration-none fw-bold'>
             <button type='button' className='btn btn-dark fw-bold'>
               RESUME
               </button>
