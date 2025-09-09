@@ -3,7 +3,8 @@ import React from 'react'
 export const Contact = () => {
   return (
     <>
-    <div id='contactSection' className='bg-black p-3 d-flex align-items-center justify-content-center' style={{height:"100vh"}}>
+    <h1 className='align-items-center'>REFRAME THIS</h1>
+    <div id='contactSection' className='p-3 d-flex align-items-center justify-content-center' style={{height:"100vh"}}>
         <div className='row contact-content-wrapper py-5 px-md-5'>
             <div className='col-md-5 col-12 px-0 contact-information-container text-white'>
                 <h4 className='heading-text'>CONTACT</h4>
@@ -18,7 +19,7 @@ export const Contact = () => {
                 </div>
             </div>
             <div className='productProfile col-md-7 col-12 px-0 contact-info-display-image text-center'>
-                <img src='https://res.cloudinary.com/di0ypmtwd/image/upload/v1724569522/WhatsApp_Image_2024-08-25_at_12.33.41_4005ac71_pvpwhs.jpg'
+                <img src=''
                 style={{
                     height: "330px",
                     imageOrientation: "from-image",
