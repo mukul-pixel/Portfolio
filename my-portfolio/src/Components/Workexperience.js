@@ -11,7 +11,7 @@ export const Workexperience = () => {
     <div className='row mb-5'>
     <div className='col-12 col-md-6'>
       <NavLink 
-        to="/app-recommendation-analysis" 
+        to="/tl-app" 
         className="text-decoration-none"
         style={{ color: "inherit" }} // prevents default blue link color
       >
