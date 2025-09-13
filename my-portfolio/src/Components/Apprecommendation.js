@@ -5,7 +5,7 @@ export const Apprecommendation = () => {
     <>
     <h2 className='text-align-center'>Apprecommendation</h2>
     <iframe
-        src="https://mybinder.org/v2/gh/mukul-pixel/app_recommendation_analysis/HEAD"
+        src="https://nbviewer.org/github/mukul-pixel/app_recommendation_analysis/blob/main/Basics.ipynb?flush_cache=true"
         width="100%"
         height="600"
         style={{ border: "none" }}
