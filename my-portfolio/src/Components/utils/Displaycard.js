@@ -15,18 +15,6 @@ export const Displaycard = ({ title, description, image, link }) => {
       <div className="card-body d-flex flex-column">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-
-        {/* CTA */}
-        {link && (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-dark mt-auto"
-          >
-            View Project
-          </a>
-        )}
       </div>
     </div>
   );
