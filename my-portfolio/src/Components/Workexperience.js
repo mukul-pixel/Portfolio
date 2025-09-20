@@ -16,7 +16,7 @@ export const Workexperience = () => {
         style={{ color: "inherit" }} // prevents default blue link color
       >
         <Displaycard
-         title="App Recommendation Analysis"
+         title="TL App" 
          description="Data analysis to recommend a free app genre to increase revenue of the organisation"
          image="https://img.freepik.com/free-vector/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_575670-1159.jpg?size=626&ext=jpg&uid=R160301206&ga=GA1.1.667835301.1724482982&semt=ais_hybrid"
     />
