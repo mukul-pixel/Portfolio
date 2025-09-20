@@ -19,6 +19,7 @@ body{
   background-size: cover;
 } */
 
+/* Back Option for all the sub-web-pages */
 .back-option {
   display: inline-flex;
   align-items: center;
@@ -37,6 +38,21 @@ body{
   /* color: #2a9a9f; */
   /* border-color: #2a9a9f; */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn{
   padding: 15px 25px;
