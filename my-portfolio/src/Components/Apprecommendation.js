@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import appStoreImg from '../assets/appstore_explore_data.png';
 import playStoreImg from '../assets/playstore_explore_data.png';
+import removingDuplicateImg from '../assets/removing_duplicates.png';
+import keepingLatestRecord from '../assets/keeping_latest_record.png';
 
 export const Apprecommendation = () => {
   return (
@@ -30,7 +32,7 @@ export const Apprecommendation = () => {
       </div>
     </div>
     <div className='exploring-data-wrapper'>
-      <h4 className='text-center text-decoration-underline py-4'>Exploring Data</h4>
+      <h4 className='text-center text-decoration-underline py-5'>Exploring Data</h4>
         <div className='row exploring-data'>
           <div className='col-md-6 col-12'>
             <h5 className='text-decoration-underline'>App Store</h5>
@@ -58,6 +60,37 @@ export const Apprecommendation = () => {
             />
           </div>
 
+        </div>
+    </div>
+    <div className='removing-duplicate-wrapper'>
+      <h4 className='text-center text-decoration-underline py-5'>Removing Duplicates</h4>
+        <div className='row removing-duplicate'>
+          <div className='col-md-6 col-12'>
+            <p className='mb-4 fs-5'>
+              As we explored the data further found that data contains duplicate rows for the same app, if you see the below cell's output, app name "Slack" have 3 entries.
+            </p>
+            <p className='mb-4 fs-5 py-3'>
+  Even though there are duplicate rows for the app, there's a catch that "Rating" is different for some rows of the same app (highlighted), which means that our data was captured on different timestamps.<br />
+  Higher the reviews more latest the data is, so instead of removing random duplicate rows for an app, we will remove the rest and keep the row with the highest number of reviews.<br /><br/>
+  To accomplish that, we will need to:<br />
+  Create a dictionary that has the unique app name as a key and the highest number of reviews of that app as the value.
+</p>
+          </div>
+          <div className='col-md-6 col-12'>
+            <img 
+              className='removing-duplicate-img w-auto'
+              src={removingDuplicateImg}
+              alt='removing_duplicate_img'
+              style={{ height: "220px", objectFit: "cover" }}
+            />
+
+            <img 
+              className='keeping-latest-img w-auto'
+              src={keepingLatestRecord}
+              alt='keeping_latest_record'
+              style={{ height: "220px", objectFit: "cover" }}
+            />
+          </div>
         </div>
     </div>
   </div>
