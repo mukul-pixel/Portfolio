@@ -4,6 +4,8 @@ import appStoreImg from '../assets/appstore_explore_data.png';
 import playStoreImg from '../assets/playstore_explore_data.png';
 import removingDuplicateImg from '../assets/removing_duplicates.png';
 import keepingLatestRecord from '../assets/keeping_latest_record.png';
+import removingNonEnglishApps from '../assets/removing_non_english_apps.png'
+import isolatingFreeApps from '../assets/isolating_free_apps.png'
 
 export const Apprecommendation = () => {
   return (
@@ -92,6 +94,44 @@ export const Apprecommendation = () => {
             />
           </div>
         </div>
+    </div>
+        <div className='business-requirement-wrapper'>
+      <h4 className='text-center text-decoration-underline py-5'>Business Requirements</h4>
+        <div className='row exploring-data'>
+          <div className='col-md-6 col-12'>
+            <h5 className='text-decoration-underline text-center pb-2'>Removing Non-English Apps</h5>
+            <p className='mb-4 fs-5'>
+              A english character is defined if it comes in between the range of 0-127 (upper_range and lower_range inclusive).<br/>
+              To check if an app is english or not we'll create a function that will check if we have a app_name that contains more than 3 non-english characters then it is a non-english app.<br/>
+              We are left with 6183 apps in app store dataset and 9614 apps in google play store dataset.
+            </p>
+            <img 
+              className='non-english-apps w-auto'
+              src={removingNonEnglishApps}
+              alt='removing_non_english_apps'
+              style={{ height: "250px", objectFit: "cover" }}
+            />
+          </div>
+
+          <div className='col-md-6 col-12'>
+            <h5 className='text-decoration-underline text-center pb-2'>Isolating Free Apps</h5>
+            <p className='mb-4 fs-5'>
+              Keeping records whose price is equals to '0' or '0.0' or '$0.00'.<br/>
+              After isolating the free apps, we have 3222 apps left in app store and 8862 apps in the google play store dataset.
+            </p>
+            <img 
+              className='isolating-free-apps w-auto'
+              src={isolatingFreeApps}
+              alt='isolating_free_apps'
+              style={{ height: "250px", objectFit: "cover" }}
+            />
+          </div>
+
+        </div>
+    </div>
+
+    <div className='analysing-data-wrapper'>
+      <h4 className='text-center text-decoration-underline py-5'>Analysing Data</h4>
     </div>
   </div>
     {/* <ol>
