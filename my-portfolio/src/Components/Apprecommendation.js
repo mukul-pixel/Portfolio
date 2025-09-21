@@ -8,6 +8,10 @@ import removingNonEnglishApps from '../assets/removing_non_english_apps.png'
 import isolatingFreeApps from '../assets/isolating_free_apps.png'
 import appStoreGenre from '../assets/app_store_genres.png'
 import playStoreGenre from '../assets/play_store_genre.png'
+import appStoreGenrePop from '../assets/app_store_genre_popularity.png';
+import appStoreAppDist from '../assets/app_store_app_distribution.png';
+import playStoreGenrePop from '../assets/play_store_genre_popularity.png';
+import healthAndFitnessApps from '../assets/health_and_fitness_apps.png';
 
 export const Apprecommendation = () => {
   return (
@@ -168,6 +172,55 @@ export const Apprecommendation = () => {
               style={{ height: "360px", objectFit: "cover" }}
             />
         </div>
+      </div>
+      <h5 className='text-decoration-underline py-2'>Analysing app genres on popularity</h5>
+      <div className='app-store-popularity row'>
+        <p className='mb-4 fs-5 col-md-6 col-12'>
+            When we analyzed the App Store, we found that categories like Navigation, Reference, Social Networking, Music, and Weather attract the highest number of reviews. 
+            But a closer look revealed a clear imbalance: a few dominant apps capture most of the attention, leaving little room for new entrants.<br/><br/> 
+            A similar pattern emerged on the Google Play Store. Categories such as Video Players, Social, Photography, and Productivity show massive install numbers, but once again, the space is heavily dominated by giants like YouTube, Facebook, Instagram, and Microsoft Word. Even in the Games category, high installs mask an oversaturated and fiercely competitive market.<br/><br/>
+            Across both platforms, one category consistently stands out: Health & Fitness. On the App Store, it places multiple apps among the top with over 300,000 reviews, while on Google Play, it averages more than 4 million installs per app. Unlike saturated categories, Health & Fitness still offers room for growth, fueled by rising global interest in wellness, fitness tracking, and mental health solutions.<br/><br/>
+            This alignment across both ecosystems suggests that Health & Fitness is not just a popular category, but also a promising opportunity for building apps with real profit potential.<br/><br/>
+            <span className='fw-bold'>
+            The Health & Fitness niche is currently dominated by weight-loss apps. Entering that space with yet another similar product would mean going head-to-head with well-established competitors — not the best idea.<br/><br/>
+            Instead, there’s a real opportunity to stand out by taking a different approach. Rather than focusing only on weight loss, we could explore a personalized habit coach app — one that blends health and wellness to help users build sustainable routines around fitness, mindfulness, and overall wellbeing.
+            </span>
+        </p>
+        <div className='col-md-6 col-12'>
+          <img 
+              className='app-store-genre-pop-img w-auto py-2'
+              src={appStoreGenrePop}
+              alt='appstore_genre_pop_img'
+              style={{ height: "350px", objectFit: "cover" }}
+          />
+          <img 
+              className='app-store-distribution-img w-auto px-2'
+              src={appStoreAppDist}
+              alt='app_store_app_distribution_img'
+              style={{ height: "48px", objectFit: "cover" }}
+          />
+          <img 
+              className='play-store-genre-pop-img w-auto p-2'
+              src={playStoreGenrePop}
+              alt='play_store_app_distribution_img'
+              style={{ height: "350px", objectFit: "cover" }}
+          />
+          <img 
+              className='health-and-fitness-apps w-auto p-3'
+              src={healthAndFitnessApps}
+              alt='health_and_fitness_apps_img'
+              style={{ height: "250px", objectFit: "cover" }}
+          />
+        </div>
+      </div>
+      <div className='conclusion-wrapper'>
+        <h4 className='text-center text-decoration-underline py-5'>Conclusion</h4>
+        <p className='fs-5'>
+          In this project, we analyzed data from the iOS App Store and Google Play Store to identify a profitable app profile for both markets.<br/><br/>
+          Our analysis showed consistent and growing user engagement with Health and Fitness apps across both platforms. <span className='fw-bold'>Based on these insights, developing a personalized habit-coaching app that combines elements of health, wellness, and behavioral science to help users build sustainable habits.</span><br/><br/>
+          <span className='fw-bold'>This type of app aligns well with current trends in personal development and digital wellness, and it will offer long-term value by supporting users in areas such as fitness routines, sleep improvement, nutrition, mindfulness, and productivity. By offering a highly customized experience through features like daily check-ins, adaptive goal setting, and habit tracking, we can keep users engaged and motivated over time.<br/><br/>
+          By focusing on user value first and building trust, we can encourage long-term engagement and gradual conversion to premium features, creating a healthy balance between user satisfaction and business profitability.</span>
+        </p>
       </div>
     </div>
   </div>
