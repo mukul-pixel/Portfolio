@@ -6,6 +6,8 @@ import removingDuplicateImg from '../assets/removing_duplicates.png';
 import keepingLatestRecord from '../assets/keeping_latest_record.png';
 import removingNonEnglishApps from '../assets/removing_non_english_apps.png'
 import isolatingFreeApps from '../assets/isolating_free_apps.png'
+import appStoreGenre from '../assets/app_store_genres.png'
+import playStoreGenre from '../assets/play_store_genre.png'
 
 export const Apprecommendation = () => {
   return (
@@ -99,7 +101,7 @@ export const Apprecommendation = () => {
       <h4 className='text-center text-decoration-underline py-5'>Business Requirements</h4>
         <div className='row exploring-data'>
           <div className='col-md-6 col-12'>
-            <h5 className='text-decoration-underline text-center pb-2'>Removing Non-English Apps</h5>
+            <h5 className='text-decoration-underline text-center pb-3'>Removing Non-English Apps</h5>
             <p className='mb-4 fs-5'>
               A english character is defined if it comes in between the range of 0-127 (upper_range and lower_range inclusive).<br/>
               To check if an app is english or not we'll create a function that will check if we have a app_name that contains more than 3 non-english characters then it is a non-english app.<br/>
@@ -114,10 +116,12 @@ export const Apprecommendation = () => {
           </div>
 
           <div className='col-md-6 col-12'>
-            <h5 className='text-decoration-underline text-center pb-2'>Isolating Free Apps</h5>
+            <h5 className='text-decoration-underline text-center pb-3'>Isolating Free Apps</h5>
             <p className='mb-4 fs-5'>
               Keeping records whose price is equals to '0' or '0.0' or '$0.00'.<br/>
               After isolating the free apps, we have 3222 apps left in app store and 8862 apps in the google play store dataset.
+              {/* After isolating the free apps, we have 3222 apps left in app store and 8862 apps in the google play store dataset. */}
+              {/* After isolating the free apps, we have 3222 apps left in app store and 8862 apps in the google play store dataset. */}
             </p>
             <img 
               className='isolating-free-apps w-auto'
@@ -132,6 +136,39 @@ export const Apprecommendation = () => {
 
     <div className='analysing-data-wrapper'>
       <h4 className='text-center text-decoration-underline py-5'>Analysing Data</h4>
+      <div className='app-store-genre-wrapper row py-3'>
+        <div className='app-store-genre-text col-md-6 col-12'>
+          <p className='mb-4 fs-5'>
+            <span className='fw-bold'>App Store - </span>When we analyse the pattern of these apps, we see that the most common genre is Games (58.16%), more than half of the apps belongs to the Games genre. Entertainment is the second most common genre(7.88%), followed by Photo & Video (4.96%), and Education(3.66%).<br/>
+            We can deduce that most of the apps are designed for fun (games, photo and video, social networking, sports, music), while the apps for pratical purposes (education, shopping, utilities, productivity, lifestyle) are fewer.<br/>
+            Though the fun apps are more in number, we cannot recommend an app profile for the App Store market based on this alone. Having a large number of apps does not translate into having a large number of users. We need more information to give a proper recommendation. 
+          </p>
+        </div>
+        <div className='app-store-genre-image col-md-6 col-12'>
+          <img 
+              className='app-store-genre w-auto'
+              src={appStoreGenre}
+              alt='app_store_genre'
+              style={{ height: "360px", objectFit: "cover" }}
+            />
+        </div>
+      </div>
+      <div className='play-store-genre-wrapper row py-3'>
+        <div className='play-store-genre-text col-md-6 col-12'>
+          <p className='mb-4 fs-5'>
+              <span className='fw-bold'>Google Play Store - </span>The most common category is Family (18.91%). Games is the second most common (9.70%), followed by Tools (8.46%) and Business (4.59%). From the above, We can see that there are more apps for practical purposes than those for fun.<br/>
+              Here we see the pattern that most of the apps are of practical type - Tools, Business, Finance, Productivity,etc. Here the apps are in balanced landscape. We cannot recommend an App Profile just by looking at the count of the apps built.
+          </p>
+        </div>
+        <div className='play-store-genre-image col-md-6 col-12'>
+          <img 
+              className='play-store-genre w-auto'
+              src={playStoreGenre}
+              alt='play_store_genre'
+              style={{ height: "360px", objectFit: "cover" }}
+            />
+        </div>
+      </div>
     </div>
   </div>
     {/* <ol>
