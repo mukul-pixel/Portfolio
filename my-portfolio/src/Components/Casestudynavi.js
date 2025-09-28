@@ -10,7 +10,7 @@ export const Casestudynavi = () => {
         <NavLink 
                 to="/" 
                 className="text-decoration-none d-flex"
-                style={{ color: "inherit" }} // prevents default blue link color
+                style={{ color: "inherit" }}
         >
           <span className='back-option fs-3'>
             <span className='mb-1'>←</span>
@@ -18,7 +18,7 @@ export const Casestudynavi = () => {
         </NavLink>
       </div>
     <div className='p-5'>
-        <h2 className='text-center text-decoration-underline'>Navi India</h2>
+        <h2 className='text-center text-decoration-underline'>Product Teardown: Navi India</h2>
         <h4 className='text-decoration-underline py-2'>About</h4>
         <div className='row about-section-wrapper gap-md-5'>
             <div className='about-section col-md-4 col-12 fs-5 py-3 me-md-5'>
@@ -76,6 +76,161 @@ export const Casestudynavi = () => {
                     style={{ height: "500px", objectFit: "cover" }}
                     />
             </div>
+        </div>
+        <div className='row core-features-wrapper'>
+            <h4 className='text-decoration-underline my-4'>Core Features</h4>
+            <div className='aarrr-funnel-text col-md-6 col-12 fs-5'>
+                <h5 className='personal-loans-heading'>Personal Loans</h5>
+                <ul>
+                    <li>₹10,000 – ₹20 lakhs, instant disbursal.</li>
+                    <li>Flexible EMIs, credit score-based.</li>
+                </ul>
+                <h5>Insurance Policies</h5>
+                <ul>
+                    <li>Low-cost premiums, cashless network.</li>
+                    <li>Simple digital purchase & claim support.</li>
+                </ul>
+                <h5>Mutual Funds (Navi MF)</h5>
+                <ul>
+                    <li>Direct mutual funds, zero commission.</li>
+                    <li>Goal-based SIP journeys.</li>
+                </ul>
+                <h5>Payments & Everyday Finance</h5>
+                <ul>
+                    <li>UPI payments: peer to peer (P2P) & merchant QR.</li>
+                    <li>Bill & recharge payments: Mobile, DTH, electricity, water, broadband.</li>
+                    <li>EMI & SIP auto-payments via UPI.</li>
+                </ul>
+            </div>
+            <div className='core-features-img col-md-6 col-12 py-4'>
+                <img 
+                    className='aarrr-funnel-img-container w-auto'
+                    src=""
+                    alt='aarrr_funnel_img'
+                    style={{ height: "500px", objectFit: "cover" }}
+                    />
+            </div>
+        </div>
+        <div className='user-experience-analysis'>
+            <h4 className='text-decoration-underline py-4'>User Experience (UX) Analysis</h4>
+            <div className="table-responsive my-3">
+                <table className="table table-bordered table-hover align-middle">
+                <thead className="table-light">
+                    <tr>
+                    <th scope="col">Experience Type</th>
+                    <th scope="col">Strengths</th>
+                    <th scope="col">Pain Points</th>
+                    <th scope="col">Solutions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {/* Row 1 */}
+                    <tr>
+                    <td>Simple UI</td>
+                    <td>
+                        - Clean, intuitive design. <br />
+                        - Easy navigation across loans, insurance, MFs.
+                    </td>
+                    <td>
+                        - Over-simplification may leave advanced users unsatisfied.{" "}
+                        <br />
+                        - No “Pro mode” for detailed views.
+                    </td>
+                    <td>
+                        - Add advanced dashboards for investors. <br />
+                        - Personalize UI based on user segment.
+                    </td>
+                    </tr>
+
+                    {/* Row 2 */}
+                    <tr>
+                    <td>Investments &amp; Spends Visibility</td>
+                    <td>- Core products (loans, insurance, MF) are accessible.</td>
+                    <td>
+                        - No consolidated view of total investments. <br />
+                        - No spend categorization. <br />
+                        - No fund recommendations. <br />
+                        - Only mutual funds offered, with limited options. <br />
+                        - No option to invest in stocks.
+                    </td>
+                    <td>
+                        - Provide portfolio dashboard with graphs. <br />
+                        - Add expense tracker with categories. <br />
+                        - Use AI for personalized MF recommendations. <br />
+                        - Expand investment products (e.g., stocks, ETFs).
+                    </td>
+                    </tr>
+
+                    {/* Row 3 */}
+                    <tr>
+                    <td>Loan/Insurance Purchase</td>
+                    <td>- Less Paperwork, Fast and easy KYC.</td>
+                    <td>- Confusion on eligibility, jargon-heavy terms.</td>
+                    <td>- Add explainers &amp; real-time guidance.</td>
+                    </tr>
+
+                    {/* Row 4 */}
+                    <tr>
+                    <td>Gamification</td>
+                    <td>
+                        - Navi Coins feature encourages app usage. <br />
+                        - Builds habit and retention.
+                    </td>
+                    <td>
+                        - Coins usage not fully integrated across products. <br />
+                        - Limited perceived value by users.
+                    </td>
+                    <td>- Expand coin usage and increase perceived value.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+        <div className='users-and-competition-wrapper py-3 row fs-5'>
+            <div className='col-md-6 col-12 py-2'>
+                <h4 className='target-users text-decoration-underline text-center py-3'>Target Users</h4>
+                <ul>
+                    <li><strong>Primary:</strong> Tech-savvy millenials and Gen Z (age 22-40) in Tier 1 and Tier 2 cities.</li>
+                    <li><strong>Secondary:</strong> First-time borrowers and underserved customers lacking access to traditional banking.</li>
+                </ul>
+            </div>
+            <div className="col-md-6 col-12 py-2">
+                <h4 className="competitors text-decoration-underline text-center py-3">Competitors</h4>
+
+                <p>
+                    Due to its multiple services within the app, Navi has multiple competitors based on the category:
+                </p>
+
+                <ul className="mb-2 pt-2">
+                    <li>
+                    <strong>Personal loans / BNPL:</strong> KreditBee, PaySense, EarlySalary, CASHe, Slice, Simpl.
+                    </li>
+                    <li>
+                    <strong>Health insurance / InsurTech:</strong> PolicyBazaar (aggregator), Acko, Digit Insurance, Aditya Birla Health.
+                    </li>
+                    <li>
+                    <strong>Investments / WealthTech:</strong> Groww, Zerodha (Coin), Paytm Money, Upstox, ET Money.
+                    </li>
+                    <li>
+                    <strong>UPI & Payments:</strong> PhonePe, Google Pay, Paytm.
+                    </li>
+                    <li>
+                    <strong>Bill payments & Wallets:</strong> Paytm, Freecharge, MobiKwik.
+                    </li>
+                </ul>
+
+                <p className='pt-2'>
+                    <span className="fw-bold">Differentiator:</span>{' '}
+                    End-to-end ownership of products (e.g., Navi MF, Navi Health Insurance) vs aggregator models—this enables tighter control on pricing, underwriting, and cross-sell.
+                </p>
+            </div>
+        </div>
+        <div className='fs-5 conclusion-wrapper py-2'>
+            <h4 className='conclusion-heading py-2'> Conclusion - </h4>
+                Navi stands out by owning its products end-to-end and combining loans, insurance, investments, and payments into a single ecosystem. Its biggest strengths lie in <strong>onboarding simplicity, gamification, and clean UI</strong>, but it lags in <strong>investment depth, spend visibility, and advanced user features.</strong>
+                <br/>
+                <br/>
+                If Navi expands into <strong>stocks/ETFs, advanced dashboards, and deeper gamification, it could evolve from a financial app into a true super-app for personal finance in India.</strong>
         </div>
     </div>
     </>
