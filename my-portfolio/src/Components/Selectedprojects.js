@@ -17,19 +17,23 @@ export const Selectedprojects = () => {
               >
                 <Displaycard
                  title="App Recommendation Analysis"
-                 description="Data analysis to recommend a free app genre to increase revenue of the organisation, 1. Shorten the data of app rows/output rows.
-        2. Give heading and some introduction text to the Notebook
-        3. Give a button to view the whole notebook, else add eveything manually, choose good colors. "
+                 description="Data analysis to recommend a free app genre to increase revenue of the organisation"
                  image="https://img.freepik.com/free-vector/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_575670-1159.jpg?size=626&ext=jpg&uid=R160301206&ga=GA1.1.667835301.1724482982&semt=ais_hybrid"
             />
         </NavLink>
         </div>
         <div className='col-12 col-md-6'>
-        <Displaycard
-             title="Aura – D2C Art Frames App"
-             description="An app that lets users buy art frames designed to evoke emotions."
-             image="https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
-        />
+          <NavLink 
+                to="/product-teardown-navi"
+                className="text-decoration-none"
+                style={{ color: "inherit" }} // prevents default blue link color
+              >
+               <Displaycard
+                    title="Product Teardown - Navi"
+                    description="An app that lets users buy art frames designed to evoke emotions."
+                    image="https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+               />
+          </NavLink>
         </div>
         </div>
             <div className='row mb-5'>
