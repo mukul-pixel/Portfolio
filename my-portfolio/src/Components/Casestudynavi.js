@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import naviHeroImage from '../assets/Navi Hero image.png';
 import aarrrFunnel from '../assets/aarrr funnel.png';
 import naviCoreFeatureImg from '../assets/navi-features-logo.png';
-
+import competitorLogosImg from '../assets/competitor logos-filled.png';
 export const Casestudynavi = () => {
   return (
     <>
@@ -190,8 +190,8 @@ export const Casestudynavi = () => {
             </div>
         </div>
         <div className='competitor-wrapper py-3 row fs-5'>
+            <h4 className="competitors text-decoration-underline text-center py-3">Competitors</h4>
             <div className="col-md-6 col-12 py-2">
-                <h4 className="competitors text-decoration-underline text-center py-3">Competitors</h4>
                 <p>
                     Due to its multiple services within the app, Navi has multiple competitors based on the category:
                 </p>
@@ -217,10 +217,10 @@ export const Casestudynavi = () => {
                     End-to-end ownership of products (e.g., Navi MF, Navi Health Insurance) vs aggregator models—this enables tighter control on pricing, underwriting, and cross-sell.
                 </p>
             </div>
-            <div className='competitor-landscape-img-container col-md-6 col-12'>
+            <div className='competitor-landscape-img-container col-md-6 col-12 py-2'>
                 <img 
                     className='competitor-landscape-img w-auto'
-                    src=""
+                    src={competitorLogosImg}
                     alt='competitor_landscape_img'
                     style={{ height: "500px", objectFit: "cover" }}
                 />
