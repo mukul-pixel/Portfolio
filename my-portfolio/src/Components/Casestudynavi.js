@@ -27,7 +27,9 @@ export const Casestudynavi = () => {
                 <br/>
                 <br/>
                 ​​In FY24, Navi reported ≈ ₹1,906.2 crore in standalone operating revenue (and ≈ ₹2,812 crore on a consolidated basis) across its financial services operations.
-
+                <br/>
+                Its core focus spans across tier 1 and tier 2 cities, where digital adoption is 
+                rising but formal financial penetration remains limited.
             </div>
             <div className='about-section-img col-md-7 col-12'>
                 <img 
@@ -186,21 +188,12 @@ export const Casestudynavi = () => {
                 </table>
             </div>
         </div>
-        <div className='users-and-competition-wrapper py-3 row fs-5'>
-            <div className='col-md-6 col-12 py-2'>
-                <h4 className='target-users text-decoration-underline text-center py-3'>Target Users</h4>
-                <ul>
-                    <li><strong>Primary:</strong> Tech-savvy millenials and Gen Z (age 22-40) in Tier 1 and Tier 2 cities.</li>
-                    <li><strong>Secondary:</strong> First-time borrowers and underserved customers lacking access to traditional banking.</li>
-                </ul>
-            </div>
+        <div className='competitor-wrapper py-3 row fs-5'>
             <div className="col-md-6 col-12 py-2">
                 <h4 className="competitors text-decoration-underline text-center py-3">Competitors</h4>
-
                 <p>
                     Due to its multiple services within the app, Navi has multiple competitors based on the category:
                 </p>
-
                 <ul className="mb-2 pt-2">
                     <li>
                     <strong>Personal loans / BNPL:</strong> KreditBee, PaySense, EarlySalary, CASHe, Slice, Simpl.
@@ -218,11 +211,18 @@ export const Casestudynavi = () => {
                     <strong>Bill payments & Wallets:</strong> Paytm, Freecharge, MobiKwik.
                     </li>
                 </ul>
-
                 <p className='pt-2'>
                     <span className="fw-bold">Differentiator:</span>{' '}
                     End-to-end ownership of products (e.g., Navi MF, Navi Health Insurance) vs aggregator models—this enables tighter control on pricing, underwriting, and cross-sell.
                 </p>
+            </div>
+            <div className='competitor-landscape-img-container col-md-6 col-12'>
+                <img 
+                    className='competitor-landscape-img w-auto'
+                    src=""
+                    alt='competitor_landscape_img'
+                    style={{ height: "500px", objectFit: "cover" }}
+                />
             </div>
         </div>
         <div className='fs-5 conclusion-wrapper py-2'>
