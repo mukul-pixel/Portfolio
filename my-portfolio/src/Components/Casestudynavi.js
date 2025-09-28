@@ -190,7 +190,7 @@ export const Casestudynavi = () => {
             </div>
         </div>
         <div className='competitor-wrapper py-3 row fs-5'>
-            <h4 className="competitors text-decoration-underline text-center py-3">Competitors</h4>
+            <h4 className="competitors text-decoration-underline py-3">Competitor Landscape</h4>
             <div className="col-md-6 col-12 py-2">
                 <p>
                     Due to its multiple services within the app, Navi has multiple competitors based on the category:
@@ -227,11 +227,21 @@ export const Casestudynavi = () => {
             </div>
         </div>
         <div className='fs-5 conclusion-wrapper py-2'>
-            <h4 className='conclusion-heading py-2'> Conclusion - </h4>
+            <h4 className='conclusion-heading py-2 text-decoration-underline'> Conclusion </h4>
                 Navi stands out by owning its products end-to-end and combining loans, insurance, investments, and payments into a single ecosystem. Its biggest strengths lie in <strong>onboarding simplicity, gamification, and clean UI</strong>, but it lags in <strong>investment depth, spend visibility, and advanced user features.</strong>
                 <br/>
                 <br/>
                 If Navi expands into <strong>stocks/ETFs, advanced dashboards, and deeper gamification, it could evolve from a financial app into a true super-app for personal finance in India.</strong>
+        </div>
+
+        <div className='text-center p-5 text-decoration-underline'>
+            <h1>BTS (Behind the Scenes)</h1>
+            <img 
+                    className='behind-the-scene w-auto'
+                    src=""
+                    alt='behind_the_scene_img'
+                    style={{ height: "500px", objectFit: "cover" }}
+            />
         </div>
     </div>
     </>
