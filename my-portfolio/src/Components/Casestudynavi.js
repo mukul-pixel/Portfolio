@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import naviHeroImage from '../assets/Navi Hero image.png';
 import aarrrFunnel from '../assets/aarrr funnel.png';
+import naviCoreFeatureImg from '../assets/navi-features-logo.png';
 
 export const Casestudynavi = () => {
   return (
@@ -104,13 +105,13 @@ export const Casestudynavi = () => {
                     <li>EMI & SIP auto-payments via UPI.</li>
                 </ul>
             </div>
-            <div className='core-features-img col-md-6 col-12 py-4'>
+            <div className='core-features-img col-md-6 col-12'>
                 <img 
-                    className='aarrr-funnel-img-container w-auto'
-                    src=""
-                    alt='aarrr_funnel_img'
+                    className='core-features-img-container w-auto pb-5'
+                    src={naviCoreFeatureImg}
+                    alt='core_features_img'
                     style={{ height: "500px", objectFit: "cover" }}
-                    />
+                />
             </div>
         </div>
         <div className='user-experience-analysis'>
