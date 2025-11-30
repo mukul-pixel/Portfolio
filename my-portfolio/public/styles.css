@@ -39,6 +39,35 @@ body{
   /* border-color: #2a9a9f; */
 }
 
+.section-block {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.section-heading {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.section-title {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.figma-placeholder {
+  height: 300px;
+  border-radius: 16px;
+  background: #f4f4f4;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
 
 
 

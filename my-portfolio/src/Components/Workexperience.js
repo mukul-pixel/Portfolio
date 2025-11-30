@@ -1,6 +1,8 @@
 import React from 'react'
 import { Displaycard } from './utils/Displaycard'
 import { NavLink } from 'react-router-dom'
+import warehouseImage from '../assets/warehouse_image.png';
+import roleAndResponsibility from '../assets/role_and_responsibility.png';
 
 export const Workexperience = () => {
   return (
@@ -11,24 +13,29 @@ export const Workexperience = () => {
     <div className='row mb-5'>
     <div className='col-12 col-md-6'>
       <NavLink 
-        to="/tl-app" 
+        to="/warehouse-gamification" 
         className="text-decoration-none"
         style={{ color: "inherit" }} // prevents default blue link color
       >
         <Displaycard
-         title="TL App" 
-         description="Data analysis to recommend a free app genre to increase revenue of the organisation"
-         image="https://img.freepik.com/free-vector/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_575670-1159.jpg?size=626&ext=jpg&uid=R160301206&ga=GA1.1.667835301.1724482982&semt=ais_hybrid"
+         title="Warehouse Gamification" 
+         description="With Blinkit's growing customer base, warehouse demand increased, leading to higher hiring costs and management challenges. Driving user productivity became a priority."
+         image= {warehouseImage}
     />
     </NavLink>
     </div>
     <div className='col-12 col-md-6'>
-    <Displaycard
-         title="Aura – D2C Art Frames App"
-         description="An app that lets users buy art frames designed to evoke emotions."
-         image="https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
-         link="https://www.priyanshuverma.com/aura"
-    />
+    <NavLink 
+        to="/role-and-responsibility" 
+        className="text-decoration-none"
+        style={{ color: "inherit" }} // prevents default blue link color
+      >
+        <Displaycard
+            title="Roles and Responsibilities"
+            description="my overall experience till now."
+            image={roleAndResponsibility}
+        />
+    </NavLink>
     </div>
     </div>
     </>

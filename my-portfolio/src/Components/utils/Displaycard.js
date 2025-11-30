@@ -7,8 +7,8 @@ export const Displaycard = ({ title, description, image, link }) => {
       <img
         src={image}
         alt={title}
-        className="card-img-top"
-        style={{ height: "200px", objectFit: "cover" }}
+        className="card-img-top p-2"
+        style={{ height: "300px", objectFit: "cover" }}
       />
 
       {/* Content */}
