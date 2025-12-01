@@ -17,79 +17,134 @@ export const Roleandresponsibility = () => {
 
       {/* Main Content Section */}
       <div className="container py-4">
-        <h2 className="fw-bold mb-4">Roles & Responsibilities</h2>
+        <h2 className="fw-bold mb-4 text-center">Roles & Responsibilities</h2>
 
-        {/* Section 1 */}
-        <div className="mb-5">
-          <h4 className="fw-semibold mb-3">1. Data & Dashboarding</h4>
-          <ul>
+        {/* SECTION 1 ------------------------------------------------ */}
+        <div className="card shadow-sm p-4 mb-5 rounded-3 border-0">
+          <h4 className="fw-bold mb-3">1. Data & Dashboarding</h4>
+          <ul className="mb-4">
             <li>
-              Built dashboards using Excel, Redash, and Mixpanel to track user
-              behaviour, feature adoption, success metrics, and business KPIs.
+              Built dashboards using <strong>Redash and Excel(GSheet) </strong> 
+              to track user behaviour, feature adoption, success metrics, and business KPIs.
             </li>
             <li>
-              Automated product performance insights using Python + Airflow and
-              shared daily/bi-weekly reports to Slack internal channels.
+              Automated product performance insights using 
+              <strong> Python + Airflow</strong> and shared daily/bi-weekly reports
+              to Slack internal channels.
             </li>
             <li>
-              Conducted root-cause analysis and collaborated with developers to
+              Conducted root-cause analysis and collaborated with developers to 
               refine workflows and fix critical gaps.
             </li>
           </ul>
 
-          <h5 className="fw-semibold mt-4">Key Projects</h5>
+          <h5 className="fw-semibold mt-3">Key Projects</h5>
 
-          <p className="mt-2 mb-1 fw-medium">Project 1 — Screen Utilization Dashboard</p>
+          {/* Project 1 */}
+          <div className="mt-3">
+            <p className="fw-semibold mb-1">📌 Project 1 — Screen Utilization Dashboard</p>
+            <ul>
+              <li>Built a dashboard to track page views across warehouse management screens.</li>
+              <li>Identified under-utilized or deprecated screens, enabling removal of dead code.</li>
+              <li>Used today by PMs & developers for UI/UX optimisation and decision-making.</li>
+            </ul>
+          </div>
+
+          {/* Project 2: Post Deployment Analysis */}
+          <div className="mt-3">
+            <p className="fw-semibold mb-1">📌 Project 2 — Post Deployment Analysis</p>
+            <ul>
+              <li>Validated new feature stability and checked whether user flows behaved as expected.</li>
+              <li>
+                Analysed drop-offs, error patterns, warehouse behaviour, and user friction points.
+              </li>
+              <li>
+                Worked with PMs and engineers to refine product behaviour and fix UX bottlenecks.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* SECTION 2 ------------------------------------------------ */}
+        <div className="card shadow-sm p-4 mb-5 rounded-3 border-0">
+          <h4 className="fw-bold mb-3">2. Product Development Lifecycle</h4>
+
           <ul>
             <li>
-              Built a dashboard to track page views across warehouse management
-              screens.
+              Gathered detailed requirements from users & business stakeholders under PM guidance.
             </li>
             <li>
-              Identified under-utilized or deprecated screens and helped remove
-              them, enabling developers to clean unnecessary code.
+              Assisted PMs with <strong>data-backed decisions</strong> and contributed to 
+              tech & product design discussions.
             </li>
             <li>
-              Dashboard is now used to evaluate screen usage for better UI/UX
-              decision-making.
-            </li>
-          </ul>
-
-          <p className="mt-3 mb-1 fw-medium">Project 2 — Vendor Dispatch Visibility</p>
-          <ul>
-            <li>
-              Introduced SKU/quantity dispatch visibility that previously didn’t
-              exist.
+              Used <strong>Postman</strong> and beta-testing to validate flows before rollout.
             </li>
             <li>
-              Built an Excel dashboard for ground teams to track pendency and
-              plan dispatch.
-            </li>
-            <li>
-              Added internal alerts to notify cluster heads, PMs, and Directors
-              about completion & delays.
+              Tracked success metrics post-launch and collaborated on scaling features PAN India.
             </li>
           </ul>
         </div>
 
-        {/* Section 2 */}
-        <div className="mb-5">
-          <h4 className="fw-semibold mb-3">2. Training, Documentation & Scaling</h4>
+        {/* SECTION 3 ------------------------------------------------ */}
+        <div className="card shadow-sm p-4 mb-5 rounded-3 border-0">
+          <h4 className="fw-bold mb-3">3. Training, SOPs & Internal Documentation</h4>
+
           <ul>
             <li>
-              Created training documentation for optimized product workflows.
+              Created clear training documents and SOPs to streamline product workflows.
             </li>
             <li>
-              Conducted beta testing, analysed drop-offs, identified UX issues,
-              and coordinated fixes with app/web developers.
+              Built internal documentation covering feature behaviour, edge cases, and pilot learnings.
             </li>
             <li>
-              Simplified flows with design teams to ensure easy adoption.
-            </li>
-            <li>
-              After validation & improvements, scaled features across PAN India.
+              Established structured feedback loops from warehouse users to continuously improve UX.
             </li>
           </ul>
+        </div>
+
+        {/* SECTION 4 ------------------------------------------------ */}
+        <div className="card shadow-sm p-4 mb-5 rounded-3 border-0">
+          <h4 className="fw-bold mb-3">4. No-Code Tools & Rapid Prototyping</h4>
+
+          <p>
+            Utilised <strong>AppSheet, SQL, and Google Sheets</strong> to build rapid prototypes
+            and temporary solutions when engineering bandwidth was limited.
+          </p>
+
+          {/* Project 1 */}
+          <div className="mt-3">
+            <p className="fw-semibold mb-1">📌 Project 1 — User Resignation Flow</p>
+            <ul>
+              <li>
+                SRE deprecated the existing resignation service with immediate notice 
+                while app team had no bandwidth.
+              </li>
+              <li>
+                Built a complete AppSheet-based flow to handle resignations, validations, 
+                approvals & notifications.
+              </li>
+              <li>
+                Ensured business continuity until a full engineering solution was implemented.
+              </li>
+            </ul>
+          </div>
+
+          {/* Project 2 */}
+          <div className="mt-3">
+            <p className="fw-semibold mb-1">📌 Project 2 — RTV Sortation Flow</p>
+            <ul>
+              <li>
+                Returns containers had mixed-vendor items, making manual bifurcation difficult.
+              </li>
+              <li>
+                Utilised SQL + AppSheet + GSheet to create automated vendor-wise categorisation.
+              </li>
+              <li>
+                Resulted in faster processing, reduced manual errors, and improved warehouse efficiency.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
