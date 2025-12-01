@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const Carousel = () => {
   const scrollRef = useRef(null);
 
