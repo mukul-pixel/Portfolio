@@ -28,7 +28,7 @@ export const Home = () => {
         </div>
         <div className='col-md-6 col-12 py-5 my-4 text-center'>
         <img 
-        src='https://img.freepik.com/free-vector/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_575670-1159.jpg?size=626&ext=jpg&uid=R160301206&ga=GA1.1.667835301.1724482982&semt=ais_hybrid' 
+        src='' 
         style={{
             imageOrientation: "from-image",
             width: "90vw",
