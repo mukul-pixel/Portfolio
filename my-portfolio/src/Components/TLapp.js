@@ -181,33 +181,26 @@ export const TLapp = () => {
 
         {/* Impact */}
         <section className="section-block mb-5">
-          <h4 className="section-heading">Impact</h4>
-          <ol>
-            <li>
-              <strong>Improved User Performance by 18%</strong>
-              <ul>
-                <li>If a user previously picked 100 line items, they now pick 118.</li>
-                <li>25,000 users × 18 = 4,50,000 extra line items/day</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Reduced Resignations by 20% & Hiring Costs by 11.6%</strong>
-              <ul>
-                <li>6,000 resignations/month</li>
-                <li>Hiring cost = ₹6 Crore/month</li>
-                <li>20% reduction = ₹1.2 Crore saved</li>
-                <li>₹50 lakh spent on rewards</li>
-                <li>Net savings = ₹70 lakh (11.6%)</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Reduced Demand Fulfillment Time by 16%</strong>
-              <ul>
-                <li>10 hours → 8.4 hours</li>
-                <li>Better SLA, lower backlog, improved CX</li>
-              </ul>
-            </li>
-          </ol>
+              <h4 className="section-heading">Impact</h4>
+              <ol>
+                <li>
+                  <strong>Improved User Performance by 18%</strong>
+                  <ul>
+                    <li>If a user previously picked 100 line items, they now pick 118.</li>
+                    <li>25,000 users × 18 = 4,50,000 extra line items/day</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Reduced Resignations by 20% & Hiring Costs by 11.6%</strong>
+                </li>
+                <li>
+                  <strong>Reduced Demand Fulfillment Time by 16%</strong>
+                  <ul>
+                    <li>10 hours → 8.4 hours</li>
+                    <li>Better SLA, lower backlog, improved CX (Customer Experience)</li>
+                  </ul>
+                </li>
+              </ol>
         </section>
       </div>
     </>
