@@ -7,7 +7,7 @@ import roleAndResponsibility from '../assets/role_and_responsibility.png';
 export const Workexperience = () => {
   return (
     <>
-    <div className='text-center'>
+    <div id = "work-section" className='text-center'>
         <h3 className='mb-5'>Work Experience</h3>
     </div>
     <div className='row mb-5'>

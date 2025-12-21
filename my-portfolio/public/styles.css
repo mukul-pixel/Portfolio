@@ -250,3 +250,81 @@ body{
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   border-radius: 16px;
 }
+
+.navbar-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navbar container */
+.navbar-custom {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+.navbar-logo {
+  height: 34px;
+  width: auto;
+}
+
+/* Brand text */
+.navbar-brand-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 0.3px;
+}
+
+/* Nav links */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  color: #333 !important;
+  padding: 6px 4px;
+  transition: color 0.25s ease;
+}
+
+/* Underline hover animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #2c5364;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #2c5364 !important;
+}
+
+/* CTA-style Contact button */
+.nav-cta {
+  padding: 8px 16px !important;
+  border-radius: 20px;
+  background: #2c5364;
+  color: #fff !important;
+}
+
+.nav-cta:hover {
+  background: #2c5364;
+}
+
+/* Mobile spacing */
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 12px;
+    padding-top: 12px;
+  }
+}
+

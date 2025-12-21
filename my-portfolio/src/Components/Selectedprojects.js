@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 export const Selectedprojects = () => {
   return (
     <>
-    <div className='text-center'>
+    <div id = "project-section" className='text-center'>
         <h3 className='mb-5'>Selected Projects</h3>
     </div>
         <div className='row mb-3'>
