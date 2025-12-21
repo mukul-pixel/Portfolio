@@ -321,9 +321,9 @@ export const Mixpanel = () => {
                 <table class="table table-bordered table-hover align-middle text-center">
                   <thead class="table-dark">
                     <tr>
-                      <td scope="col">Priority</td>
-                      <td scope="col">Initiative</td>
-                      <td scope="col">Business Goal Impact</td>
+                      <td>Priority</td>
+                      <td>Initiative</td>
+                      <td>Business Goal Impact</td>
                     </tr>
                   </thead>
                   <tbody>
