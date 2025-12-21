@@ -13,8 +13,8 @@ import { Skills } from './Skills'
 export const Home = () => {
   return (
     <>
-    <div className='px-md-5 px-0'>
     <Navbar/>
+    <div className='px-md-5 px-0'>
     <div className='hero-section row pt-5 px-md-5 px-3 py-5 my-5'>
         <div className='col-md-6 col-12 py-5 my-5'>
             <h2 className='heading-text py-3'>Hi! I'm Mukul Khatri</h2>
@@ -41,9 +41,9 @@ export const Home = () => {
     <Selectedprojects/>
     <Journey/>
     <Skills/>
+    </div>
+    </div>
     <Contact/>
-    </div>
-    </div>
     </>
   )
 }
