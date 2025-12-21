@@ -9,6 +9,7 @@ import { Workexperience } from './Workexperience'
 import { Selectedprojects } from './Selectedprojects'
 import { Journey } from './Journey'
 import { Skills } from './Skills'
+import heroImage from "../assets/IMG_0213.jpeg";
 
 export const Home = () => {
   return (
@@ -21,21 +22,17 @@ export const Home = () => {
             <h3>Aspiring Product Manager</h3>
             <h4 className='fs-4'>Experienced in building, analyzing, and managing products from 0 → 1.</h4>
             <a href='https://drive.google.com/file/d/1EvbHg9AlIzuolMpedWIbM2Uc3j9k3n1f/view?usp=sharing' className='resume-button text-decoration-none fw-bold'>
-            <button type='button' className='btn btn-dark fw-bold my-3'>
+            <button type='button' className='btn text-white my-3 fw-bold mb-4'>
               RESUME
-              </button>
-              </a>
+            </button>
+            </a>
         </div>
-        <div className='col-md-6 col-12 py-5 my-4 text-center'>
-        <img 
-        src='' 
-        style={{
-            imageOrientation: "from-image",
-            width: "90vw",
-            maxWidth: "500px"
-        }} 
-        alt='mukulImage'
-    />
+        <div className='col-md-6 col-12 py-5 my-2 text-center'>
+        <img
+          src={heroImage}
+          alt="Mukul Khatri"
+          className="hero-image"
+        />
       </div>
     <Workexperience/>
     <Selectedprojects/>

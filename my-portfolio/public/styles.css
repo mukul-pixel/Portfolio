@@ -251,12 +251,6 @@ body{
   border-radius: 16px;
 }
 
-.navbar-logo {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-}
-
 /* Navbar container */
 .navbar-custom {
   background: rgba(255, 255, 255, 0.95);
@@ -267,7 +261,7 @@ body{
 
 /* Logo */
 .navbar-logo {
-  height: 34px;
+  height: 40px;
   width: auto;
 }
 
@@ -308,23 +302,66 @@ body{
   color: #2c5364 !important;
 }
 
-/* CTA-style Contact button */
-.nav-cta {
-  padding: 8px 16px !important;
-  border-radius: 20px;
-  background: #2c5364;
-  color: #fff !important;
-}
-
-.nav-cta:hover {
-  background: #2c5364;
-}
-
 /* Mobile spacing */
 @media (max-width: 991px) {
   .navbar-nav {
     gap: 12px;
     padding-top: 12px;
+  }
+}
+
+/* resume button */
+
+.resume-button {
+  padding: 8px 18px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2c5364, #203a43);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(44, 83, 100, 0.35);
+}
+
+/* Hover effect */
+.resume-button:hover {
+  background: linear-gradient(135deg, #2f647a, #1f3b4d);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(44, 83, 100, 0.45);
+  color: #ffffff;
+}
+
+/* Active click */
+.resume-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(44, 83, 100, 0.3);
+}
+
+
+.hero-image {
+  width: 40vw;
+  max-width: 250px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Subtle hover interaction */
+.hero-image:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 60vw;
+    max-width: 220px;
   }
 }
 

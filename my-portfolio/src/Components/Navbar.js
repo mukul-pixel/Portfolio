@@ -9,9 +9,9 @@ export const Navbar = () => {
       {/* Logo */}
       <a
         href="https://mukulkhatri.vercel.app/"
-        className="navbar-brand d-flex align-items-center"
+        className="navbar-brand d-flex align-items-center p-0"
       >
-        <img src={homeImage} alt="Mukul Khatri" className="navbar-logo" />
+        <img src={homeImage} alt="Mukul Khatri" className="navbar-logo"/>
       </a>
 
       {/* Mobile toggle */}
