@@ -83,7 +83,7 @@ export const TLapp = () => {
         <section className="section-block">
           <h4 className="section-heading">Current Workflow Overview</h4>
           <div className="row">
-            <div className="col-md-6">
+            <div>
               <p>
                 Warehouse operations consist of multiple task-based departments:
                 Unloader, Segregator, Auditor, Picker, Packer, Sorter,
@@ -99,11 +99,11 @@ export const TLapp = () => {
                 - Packers pack completed pick crates
               </p>
             </div>
-            <div className="col-md-6 text-center">
+            {/* <div className="col-md-6 text-center">
               <div className="figma-placeholder">
                 Current flow figma
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
