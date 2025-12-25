@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import figmaDesign from "../assets/figma_design.png";
 
 export const TLapp = () => {
   return (
@@ -150,8 +151,17 @@ export const TLapp = () => {
             </li>
           </ol>
             <div className="col-md-8 text-center">
-              <div className="figma-placeholder">
-                Current flow figma
+              <div className="figma design wrapper">
+                 <img
+                  src={figmaDesign}
+                  alt="Current flow Figma design"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    maxWidth: "100%",
+                    display: "block",
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -185,10 +195,10 @@ export const TLapp = () => {
               <ol>
                 <li>
                   <strong>Improved User Performance by 18%</strong>
-                  <ul>
+                  {/* <ul>
                     <li>If a user previously picked 100 line items, they now pick 118.</li>
                     <li>25,000 users × 18 = 4,50,000 extra line items/day</li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li>
                   <strong>Reduced Resignations by 20% & Hiring Costs by 11.6%</strong>
@@ -196,7 +206,7 @@ export const TLapp = () => {
                 <li>
                   <strong>Reduced Demand Fulfillment Time by 16%</strong>
                   <ul>
-                    <li>10 hours → 8.4 hours</li>
+                    {/* <li>10 hours → 8.4 hours</li> */}
                     <li>Better SLA, lower backlog, improved CX (Customer Experience)</li>
                   </ul>
                 </li>
