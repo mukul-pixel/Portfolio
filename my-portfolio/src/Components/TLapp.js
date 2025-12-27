@@ -6,7 +6,7 @@ export const TLapp = () => {
   return (
     <>
       {/* Back Button */}
-      <div className="back-option-wrapper px-5 pt-5">
+      <div className="back-option-wrapper px-md-5 px-4 pt-5">
         <NavLink
           to="/"
           className="text-decoration-none d-flex align-items-center"

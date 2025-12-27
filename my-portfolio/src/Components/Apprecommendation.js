@@ -16,7 +16,7 @@ import healthAndFitnessApps from '../assets/health_and_fitness_apps.png';
 export const Apprecommendation = () => {
   return (
 <>
-  <div className='back-option-wrapper px-5 pt-5'>
+  <div className='back-option-wrapper px-md-5 px-4 pt-5'>
     <NavLink 
             to="/" 
             className="text-decoration-none d-flex"
@@ -27,7 +27,7 @@ export const Apprecommendation = () => {
       </span>
     </NavLink>
   </div>
-  <div className='p-5'>
+  <div className='p-md-5 p-3'>
     <h2 className='text-center text-decoration-underline'>App Recommendation</h2>
     <div  className='col'>
       <div className='col-md-8 col-12 pt-5'>
@@ -47,11 +47,10 @@ export const Apprecommendation = () => {
             <p className='mb-4 fs-5'>
               App store data have 7197 iOS apps and 16 columns. Columns that will most likely be interest of us include - 'track_name', 'price', 'rating_count_tot', 'user_rating', 'prime_genre'.
             </p>
-            <img 
-              className='exploring-data-img w-auto'
+            <img
+              className="exploring-data-img img-fluid"
               src={appStoreImg}
-              alt='appstore_explore_data_img'
-              style={{ height: "250px", objectFit: "cover" }}
+              alt="appstore_explore_data_img"
             />
           </div>
 
@@ -60,14 +59,12 @@ export const Apprecommendation = () => {
             <p className='mb-4 fs-5'>
               Google play store have 10841 android apps and 13 columns. Columns that most likely be interest of us include - 'App', 'Category', 'Reviews', 'Installs', 'Price', 'Genres'.
             </p>
-            <img 
-              className='exploring-data-img w-auto'
+             <img
+              className="exploring-data-img img-fluid rounded"
               src={playStoreImg}
-              alt='playstore_explore_data_img'
-              style={{ height: "250px", objectFit: "cover" }}
+              alt="playstore_explore_data_img"
             />
           </div>
-
         </div>
     </div>
     <div className='removing-duplicate-wrapper'>
@@ -85,19 +82,18 @@ export const Apprecommendation = () => {
 </p>
           </div>
           <div className='col-md-6 col-12'>
-            <img 
-              className='removing-duplicate-img w-auto'
+            <img
+              className="cleaning-step-img img-fluid rounded"
               src={removingDuplicateImg}
-              alt='removing_duplicate_img'
-              style={{ height: "220px", objectFit: "cover" }}
+              alt="removing_duplicate_img"
             />
 
-            <img 
-              className='keeping-latest-img w-auto'
+            <img
+              className="cleaning-step-img img-fluid rounded"
               src={keepingLatestRecord}
-              alt='keeping_latest_record'
-              style={{ height: "220px", objectFit: "cover" }}
+              alt="keeping_latest_record"
             />
+
           </div>
         </div>
     </div>
@@ -111,11 +107,10 @@ export const Apprecommendation = () => {
               To check if an app is english or not we'll create a function that will check if we have a app_name that contains more than 3 non-english characters then it is a non-english app.<br/>
               We are left with 6183 apps in app store dataset and 9614 apps in google play store dataset.
             </p>
-            <img 
-              className='non-english-apps w-auto'
+            <img
+              className="data-cleaning-img img-fluid rounded"
               src={removingNonEnglishApps}
-              alt='removing_non_english_apps'
-              style={{ height: "250px", objectFit: "cover" }}
+              alt="removing_non_english_apps"
             />
           </div>
 
@@ -127,17 +122,14 @@ export const Apprecommendation = () => {
               {/* After isolating the free apps, we have 3222 apps left in app store and 8862 apps in the google play store dataset. */}
               {/* After isolating the free apps, we have 3222 apps left in app store and 8862 apps in the google play store dataset. */}
             </p>
-            <img 
-              className='isolating-free-apps w-auto'
+            <img
+              className="data-cleaning-img img-fluid rounded"
               src={isolatingFreeApps}
-              alt='isolating_free_apps'
-              style={{ height: "250px", objectFit: "cover" }}
+              alt="isolating_free_apps"
             />
           </div>
-
         </div>
     </div>
-
     <div className='analysing-data-wrapper'>
       <h4 className='text-center text-decoration-underline py-5'>Analysing Data</h4>
       <div className='app-store-genre-wrapper row py-3'>
@@ -149,12 +141,12 @@ export const Apprecommendation = () => {
           </p>
         </div>
         <div className='app-store-genre-image col-md-6 col-12'>
-          <img 
-              className='app-store-genre w-auto'
-              src={appStoreGenre}
-              alt='app_store_genre'
-              style={{ height: "360px", objectFit: "cover" }}
-            />
+          <img
+            className="analysis-img img-fluid rounded"
+            src={appStoreGenre}
+            alt="app_store_genre"
+          />
+
         </div>
       </div>
       <div className='play-store-genre-wrapper row py-3'>
@@ -165,12 +157,12 @@ export const Apprecommendation = () => {
           </p>
         </div>
         <div className='play-store-genre-image col-md-6 col-12'>
-          <img 
-              className='play-store-genre w-auto'
-              src={playStoreGenre}
-              alt='play_store_genre'
-              style={{ height: "360px", objectFit: "cover" }}
-            />
+          <img
+            className="analysis-img img-fluid rounded"
+            src={playStoreGenre}
+            alt="play_store_genre"
+          />
+
         </div>
       </div>
       <h5 className='text-decoration-underline py-2'>Analysing app genres on popularity</h5>
@@ -187,30 +179,10 @@ export const Apprecommendation = () => {
             </span>
         </p>
         <div className='col-md-6 col-12'>
-          <img 
-              className='app-store-genre-pop-img w-auto py-2'
-              src={appStoreGenrePop}
-              alt='appstore_genre_pop_img'
-              style={{ height: "350px", objectFit: "cover" }}
-          />
-          <img 
-              className='app-store-distribution-img w-auto px-2'
-              src={appStoreAppDist}
-              alt='app_store_app_distribution_img'
-              style={{ height: "48px", objectFit: "cover" }}
-          />
-          <img 
-              className='play-store-genre-pop-img w-auto p-2'
-              src={playStoreGenrePop}
-              alt='play_store_app_distribution_img'
-              style={{ height: "350px", objectFit: "cover" }}
-          />
-          <img 
-              className='health-and-fitness-apps w-auto p-3'
-              src={healthAndFitnessApps}
-              alt='health_and_fitness_apps_img'
-              style={{ height: "250px", objectFit: "cover" }}
-          />
+          <img className="analysis-img img-fluid rounded py-2" src={appStoreGenrePop} alt='appstore_genre_pop_img'/>
+          <img className="analysis-img-small img-fluid rounded px-2" src={appStoreAppDist} alt='app_store_app_distribution_img' />
+          <img className="analysis-img img-fluid rounded p-2" src={playStoreGenrePop} alt='play_store_app_distribution_img' />
+          <img className="analysis-img-medium img-fluid rounded p-3" src={healthAndFitnessApps} alt='health_and_fitness_apps_img' />
         </div>
       </div>
       <div className='conclusion-wrapper'>

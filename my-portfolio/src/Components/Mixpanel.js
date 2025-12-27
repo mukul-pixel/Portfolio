@@ -15,7 +15,7 @@ export const Mixpanel = () => {
   return (
     <>
           {/* Back Button */}
-          <div className="back-option-wrapper px-5 pt-5">
+          <div className="back-option-wrapper px-md-5 px-2 pt-5">
             <NavLink
               to="/"
               className="text-decoration-none d-flex align-items-center"
@@ -63,7 +63,7 @@ export const Mixpanel = () => {
               <h4 className="section-heading">Metrics, Insights and Improvements</h4>
               <div className="retention-funnel row">
                   {/* Text Section */}
-                  <div className="funnel-text col-md-6 col-12 p-3">
+                  <div className="funnel-text col-md-6 col-12 p-md-3">
                     <h5>Retention Funnel</h5>
                     <p>
                       This funnel tracks <strong>Weekly Active Users (WAU)</strong> and retention trends,
@@ -234,16 +234,16 @@ export const Mixpanel = () => {
               <div className='subscription-funnel-img row'>
                   <div className="col-md-6 col-12 text-center p-3">
                     <img
-                      src={planBreakdown}
-                      alt="plan-breakdown funnel analysis"
-                      className="rounded funnel-img"
-                    />
+                        src={planBreakdown}
+                        alt="plan-breakdown funnel analysis"
+                        className="img-fluid rounded"
+                      />
                   </div>
                   <div className="col-md-6 col-12 text-center p-3">
                     <img
                       src={paymentBreakdown}
                       alt="payment-breakdown funnel analysis"
-                      className="rounded funnel-img"
+                      className="img-fluid rounded"
                     />
                   </div>
                 </div>

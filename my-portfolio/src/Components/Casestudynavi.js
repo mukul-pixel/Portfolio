@@ -7,7 +7,7 @@ import competitorLogosImg from '../assets/competitor logos-filled.png';
 export const Casestudynavi = () => {
   return (
     <>
-    <div className='back-option-wrapper px-5 pt-5'>
+    <div className='back-option-wrapper px-md-5 px-4 pt-5'>
         <NavLink 
                 to="/" 
                 className="text-decoration-none d-flex"
@@ -18,11 +18,11 @@ export const Casestudynavi = () => {
           </span>
         </NavLink>
       </div>
-    <div className='p-5'>
+    <div className='px-md-5 p-3'>
         <h2 className='text-center text-decoration-underline'>Product Teardown: Navi India</h2>
         <h4 className='text-decoration-underline py-2'>About</h4>
         <div className='row about-section-wrapper gap-md-5'>
-            <div className='about-section col-md-4 col-12 fs-5 py-3 me-md-5'>
+            <div className='about-section col-md-4 col-12 fs-5 py-3'>
                 Navi is a fintech app offering instant personal loans, health insurance, UPI transfers, bill payments and mutual funds.<br/>
                 Founded by Sachin Bansal in 2020, it targets India’s growing digital population with the promise of <span className='fw-bold'>“simple, affordable, accessible financial services.”</span>
                 <br/>
@@ -34,10 +34,10 @@ export const Casestudynavi = () => {
             </div>
             <div className='about-section-img col-md-7 col-12'>
                 <img 
-                    className='navi-hero-img w-auto'
+                    className='navi-hero-img img-fluid'
                     src={naviHeroImage}
                     alt='navi_hero_img'
-                    style={{ height: "500px", objectFit: "cover" }}
+                    // style={{ height: "500px", objectFit: "cover" }}
                     />
             </div>
         </div>
@@ -73,10 +73,10 @@ export const Casestudynavi = () => {
             </div>
             <div className='aarrr-funnel-img col-md-6 col-12 py-4'>
                 <img 
-                    className='aarrr-funnel-img-container w-auto'
+                    className='aarrr-funnel-img-container img-fluid'
                     src={aarrrFunnel}
                     alt='aarrr_funnel_img'
-                    style={{ height: "500px", objectFit: "cover" }}
+                    // style={{ height: "500px", objectFit: "cover" }}
                     />
             </div>
         </div>
@@ -107,10 +107,10 @@ export const Casestudynavi = () => {
             </div>
             <div className='core-features-img col-md-6 col-12'>
                 <img 
-                    className='core-features-img-container w-auto pb-5'
+                    className='core-features-img-container img-fluid pb-5'
                     src={naviCoreFeatureImg}
                     alt='core_features_img'
-                    style={{ height: "500px", objectFit: "cover" }}
+                    // style={{ height: "500px", objectFit: "cover" }}
                 />
             </div>
         </div>
@@ -219,10 +219,10 @@ export const Casestudynavi = () => {
             </div>
             <div className='competitor-landscape-img-container col-md-6 col-12 py-2'>
                 <img 
-                    className='competitor-landscape-img w-auto'
+                    className='competitor-landscape-img img-fluid'
                     src={competitorLogosImg}
                     alt='competitor_landscape_img'
-                    style={{ height: "500px", objectFit: "cover" }}
+                    // style={{ height: "500px", objectFit: "cover" }}
                 />
             </div>
         </div>
@@ -237,10 +237,10 @@ export const Casestudynavi = () => {
         <div className='text-center p-5 text-decoration-underline'>
             <h1>BTS (Behind the Scenes)</h1>
             <img 
-                    className='behind-the-scene w-auto'
+                    className='behind-the-scene img-fluid'
                     src=""
                     alt='behind_the_scene_img'
-                    style={{ height: "500px", objectFit: "cover" }}
+                    // style={{ height: "500px", objectFit: "cover" }}
             />
         </div>
     </div>

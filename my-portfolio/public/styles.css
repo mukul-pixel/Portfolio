@@ -71,11 +71,11 @@ body{
 
 
 /* subscription-img styles */
-.funnel-img {
+/* .funnel-img {
   height: 350px;
   width: auto;
   object-fit: contain;
-}
+} */
 
 .img-fluid-1{
   height: 350px;
@@ -364,4 +364,12 @@ body{
     max-width: 220px;
   }
 }
+
+
+.cleaning-step-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+}
+
 
