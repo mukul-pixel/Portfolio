@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import whoopThumbNail from '../assets/6.png';
 import naviThumbNail from '../assets/4.png';
 import recommendationThumbNail from '../assets/3.png';
+import teardownThumbNail from '../assets/7.png';
 
 export const Selectedprojects = () => {
   return (
@@ -39,7 +40,7 @@ export const Selectedprojects = () => {
           </NavLink>
         </div>
         </div>
-            <div className='row mb-5 gap-md-0 gap-3 text-center px-2'>
+          <div className='row mb-5 gap-md-0 gap-3'>
             <div className='col-12 col-md-6'>
             <NavLink 
                 to="/app-recommendation-analysis" 
@@ -62,27 +63,8 @@ export const Selectedprojects = () => {
                 <Displaycard
                     title="Product Teardown"
                     description="Product Teardown of any AI app"
-                    image="https://media.licdn.com/dms/image/v2/D4E12AQG5ayANUj57yw/article-cover_image-shrink_600_2000/B4EZZdGsJzHQAU-/0/1745318757572?e=2147483647&v=beta&t=pvwV0xEaceEdMSUbwnbZQL1S1Bjsf6aYyzLBHy1F4es"
+                    image={teardownThumbNail}
                 />
-
-                {/* Full card overlay */}
-                <div style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: "rgba(0, 0, 0, 0.6)",
-                    color: "#fff",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "1.5rem",
-                    fontWeight: "bold",
-                    borderRadius: "8px",
-                }}>
-                  Coming Soon
-                </div>
               </NavLink>
             </div>
             </div>
