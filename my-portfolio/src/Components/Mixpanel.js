@@ -232,20 +232,22 @@ export const Mixpanel = () => {
                   </div>
                 </div>
               <div className='subscription-funnel-img row'>
-                  <div className="col-md-6 col-12 text-center p-3">
-                    <img
-                        src={planBreakdown}
-                        alt="plan-breakdown funnel analysis"
-                        className="img-fluid rounded"
-                      />
-                  </div>
-                  <div className="col-md-6 col-12 text-center p-3">
-                    <img
-                      src={paymentBreakdown}
-                      alt="payment-breakdown funnel analysis"
-                      className="img-fluid rounded"
-                    />
-                  </div>
+                <div className="col-md-6 col-12 mb-3">
+                  <img
+                    src={planBreakdown}
+                    alt="plan-breakdown funnel analysis"
+                    className="img-fluid rounded"
+                    style={{ width: '100%', maxHeight: '350px', objectFit: 'contain' }}
+                  />
+                </div>
+                <div className="col-md-6 col-12">
+                  <img
+                    src={paymentBreakdown}
+                    alt="payment-breakdown funnel analysis"
+                    className="img-fluid rounded"
+                    style={{ width: '100%', maxHeight: '350px', objectFit: 'contain' }}
+                  />
+                </div>
                 </div>
               <div className="cancellation-funnel row mt-3">
                   {/* Text Section */}
