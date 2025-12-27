@@ -20,7 +20,7 @@ export const Home = () => {
   <div className="row pt-5 py-5">
 
     {/* Left content */}
-    <div className="col-md-6 col-12 py-5 my-5 px-md-5 px-3">
+    <div className="col-md-6 col-12 py-md-5 py-3 my-md-5 px-md-5 px-3">
       <h2 className="heading-text py-3">Hi! I'm Mukul Khatri</h2>
       <h3>Aspiring Product Manager</h3>
       <h4 className="fs-4">
@@ -40,7 +40,7 @@ export const Home = () => {
       </a>
     </div>
       {/* Right image */}
-      <div className="col-md-6 col-12 text-center py-md-5 py-0 my-md-2 mb-5 mb-md-0">
+      <div className="col-md-6 col-12 text-center py-md-5 py-0 my-md-2 my-5 mb-md-0">
         <img
           src={heroImage}
           alt="Mukul Khatri"

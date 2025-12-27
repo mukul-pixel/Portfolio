@@ -1,6 +1,9 @@
 import React from 'react'
 import { Displaycard } from './utils/Displaycard'
 import { NavLink } from 'react-router-dom'
+import whoopThumbNail from '../assets/6.png';
+import naviThumbNail from '../assets/4.png';
+import recommendationThumbNail from '../assets/3.png';
 
 export const Selectedprojects = () => {
   return (
@@ -18,7 +21,7 @@ export const Selectedprojects = () => {
             <Displaycard
                  title="Whoop - Product Analysis using Mixpanel"
                  description="Everything from dashboard to insights - retention, revenue, user satisfaction"
-                 image="https://framerusercontent.com/assets/KHyJwfBzTDm8CBtgWokK94nAuQ.png"
+                 image= {whoopThumbNail}
             />
             </NavLink>
         </div>
@@ -31,7 +34,7 @@ export const Selectedprojects = () => {
                <Displaycard
                     title="Product Teardown - Navi"
                     description="An app that lets users buy art frames designed to evoke emotions."
-                    image="https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+                    image={naviThumbNail}
                />
           </NavLink>
         </div>
@@ -46,7 +49,7 @@ export const Selectedprojects = () => {
                 <Displaycard
                  title="App Recommendation Analysis"
                  description="Data analysis to recommend a free app genre to increase revenue of the organisation"
-                 image="https://img.freepik.com/free-vector/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_575670-1159.jpg?size=626&ext=jpg&uid=R160301206&ga=GA1.1.667835301.1724482982&semt=ais_hybrid"
+                 image={recommendationThumbNail}
             />
             </NavLink>
             </div>
@@ -59,7 +62,7 @@ export const Selectedprojects = () => {
                 <Displaycard
                     title="Product Teardown"
                     description="Product Teardown of any AI app"
-                    image="https://hellopm.co/wp-content/uploads/2023/09/1693110231021.jpeg"
+                    image="https://media.licdn.com/dms/image/v2/D4E12AQG5ayANUj57yw/article-cover_image-shrink_600_2000/B4EZZdGsJzHQAU-/0/1745318757572?e=2147483647&v=beta&t=pvwV0xEaceEdMSUbwnbZQL1S1Bjsf6aYyzLBHy1F4es"
                 />
 
                 {/* Full card overlay */}

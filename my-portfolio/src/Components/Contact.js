@@ -12,7 +12,7 @@ export const Contact = () => {
       <div className="row contact-content-wrapper py-5 px-md-5 w-100">
 
         {/* LEFT SECTION */}
-        <div className="col-md-5 col-12 px-md-0 px-2 contact-information-container text-white">
+        <div className="col-md-5 col-12 px-md-0 px-3 contact-information-container text-white">
           
           {/* Availability Badge */}
           <span className="badge bg-success mb-3 px-3 py-2 my-2">

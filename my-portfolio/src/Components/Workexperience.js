@@ -1,8 +1,8 @@
 import React from 'react'
 import { Displaycard } from './utils/Displaycard'
 import { NavLink } from 'react-router-dom'
-import warehouseImage from '../assets/warehouse_image.png';
-import roleAndResponsibility from '../assets/role_and_responsibility.png';
+import warehouseImage from '../assets/1.png';
+import roleAndResponsibility from '../assets/2.png';
 
 export const Workexperience = () => {
   return (
