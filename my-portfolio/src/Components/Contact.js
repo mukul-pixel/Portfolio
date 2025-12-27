@@ -1,24 +1,13 @@
-import React from 'react'
-import { useState } from "react";
 import Lottie from "lottie-react";
 import contactAnimation from "../assets/contact-email.json";
+import { FaGithub, FaLinkedin, FaCode, FaEnvelope } from "react-icons/fa";
 
 export const Contact = () => {
- const [copiedField, setCopiedField] = useState("");
-
-  const handleCopy = (text, field) => {
-    navigator.clipboard.writeText(text);
-    setCopiedField(field);
-
-    setTimeout(() => {
-      setCopiedField("");
-    }, 2000);
-  };
 
   return (
     <div
       id="contactSection"
-      className="p-3 d-flex align-items-center justify-content-center"
+      className="p-3 d-flex align-items-center justify-content-center mt-5"
     >
       <div className="row contact-content-wrapper py-5 px-md-5 w-100">
 
@@ -34,68 +23,51 @@ export const Contact = () => {
           <h1 className="contact-subheading-text">Get In Touch</h1>
 
           <p className="contact-text fs-5 my-3">
-            I'm eager to contribute my skills and dedication to your company.
-            Give me the opportunity to work for you, and I promise I won’t disappoint.
-            Let’s connect!
+           I’m excited to contribute my skills and perspective to a team building meaningful products.
+           If my background aligns with your needs, I’d love to connect and explore how I can add value.
           </p>
 
-          {/* Email */}
-          <div
-            className="d-flex align-items-center gap-2 mb-2 cursor-pointer"
-            onClick={() =>
-              handleCopy("mukul8756@gmail.com", "email")
-            }
-          >
-            <span className="contact-link">
-              📬 mukul8756@gmail.com
+        {/* Social Links */}
+        <div className="contact-links py-3 d-flex flex-wrap gap-3">
+          <a
+            href="mailto:mukul8756@gmail.com"
+            className="contact-mail-link"
+            >
+            <span className="contact-link-icon">
+                <FaEnvelope size={24} />
             </span>
-            {copiedField === "email" && (
-              <span className="text-success small">Copied!</span>
-            )}
-          </div>
+        </a>
 
-          {/* Phone */}
-          <div
-            className="d-flex align-items-center gap-2 cursor-pointer"
-            onClick={() =>
-              handleCopy("6350018762", "phone")
-            }
-          >
-            <span className="contact-link">
-              📞 6350018762
-            </span>
-            {copiedField === "phone" && (
-              <span className="text-success small">Copied!</span>
-            )}
-          </div>
+        <a
+            href="https://github.com/mukul-pixel"
+            className="contact-link-icon"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+        >
+            <FaGithub size={24} />
+        </a>
 
-          {/* Social Links */}
-          <div className="contact-links py-3 d-flex flex-wrap gap-3">
-            <a
-              href="https://github.com/mukul-pixel"
-              className="contact-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mukul-khatri-619b78262/"
-              className="contact-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://leetcode.com/u/mukulkhatri2/"
-              className="contact-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LeetCode
-            </a>
-          </div>
+        <a
+            href="https://www.linkedin.com/in/mukul-khatri-619b78262/"
+            className="contact-link-icon"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+        >
+            <FaLinkedin size={24} />
+        </a>
+
+        <a
+            href="https://leetcode.com/u/mukulkhatri2/"
+            className="contact-link-icon"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LeetCode"
+        >
+            <FaCode size={24} />
+        </a>
+        </div>
         </div>
 
         {/* RIGHT SECTION – LOTTIE */}
@@ -103,10 +75,9 @@ export const Contact = () => {
           <Lottie
             animationData={contactAnimation}
             loop={true}
-            style={{ maxWidth: "420px" }}
+            style={{ maxWidth: "350px" }}
           />
         </div>
-
       </div>
     </div>
   );

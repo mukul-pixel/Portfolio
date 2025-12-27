@@ -56,7 +56,7 @@ export const Navbar = () => {
           <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-3">
             <li className="nav-item">
               <a className="nav-link" href="#about-section" onClick={closeNavbar}>
-                About
+                Journey
               </a>
             </li>
 

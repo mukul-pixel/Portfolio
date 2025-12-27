@@ -69,14 +69,14 @@ export const Selectedprojects = () => {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    backgroundColor: "rgba(0, 0, 0, 0.6)", // dark transparent
+                    backgroundColor: "rgba(0, 0, 0, 0.6)",
                     color: "#fff",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     fontSize: "1.5rem",
                     fontWeight: "bold",
-                    borderRadius: "8px", // optional: match Displaycard rounded corners
+                    borderRadius: "8px",
                 }}>
                   Coming Soon
                 </div>

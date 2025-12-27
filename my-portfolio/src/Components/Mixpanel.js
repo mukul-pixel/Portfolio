@@ -304,13 +304,12 @@ export const Mixpanel = () => {
                     />
                   </div>
               </div>
-              <div className="cancellation-funnel-img mt-3">
-                  {/* Image Section */}
+              <div className="cancellation-funnel-img mt-md-3">
                   <div className="text-center">
                     <img
                       src={cancellationReasons}
                       alt="cancellation-reasons funnel analysis"
-                      className="img-fluid-1 rounded"
+                      className="img-fluid rounded"
                     />
                   </div>
               </div>
