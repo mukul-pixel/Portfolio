@@ -5,11 +5,13 @@ import { TLapp } from "./Components/TLapp";
 import { Casestudynavi } from "./Components/Casestudynavi";
 import { Roleandresponsibility } from "./Components/Roleandresponsibility";
 import { Mixpanel } from "./Components/Mixpanel";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/app-recommendation-analysis" element={<Apprecommendation/>}/>
