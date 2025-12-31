@@ -32,7 +32,7 @@ export const Workexperience = () => {
       >
         <Displaycard
             title="Roles and Responsibilities"
-            description="my overall experience till now."
+            description="Insights into my role, responsibilities, and day-to-day impact at Blinkit."
             image={roleAndResponsibility}
         />
     </NavLink>

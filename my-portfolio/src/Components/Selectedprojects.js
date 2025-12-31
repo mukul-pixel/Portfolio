@@ -21,7 +21,7 @@ export const Selectedprojects = () => {
               >
             <Displaycard
                  title="Whoop - Product Analysis using Mixpanel"
-                 description="Everything from dashboard to insights - retention, revenue, user satisfaction"
+                 description="Mixpanel analysis identifying retention gaps, anomalies, and growth opportunities."
                  image= {whoopThumbNail}
             />
             </NavLink>
@@ -34,7 +34,7 @@ export const Selectedprojects = () => {
               >
                <Displaycard
                     title="Product Teardown - Navi"
-                    description="An app that lets users buy art frames designed to evoke emotions."
+                    description="A business and product case study covering UX, growth, and monetization."
                     image={naviThumbNail}
                />
           </NavLink>

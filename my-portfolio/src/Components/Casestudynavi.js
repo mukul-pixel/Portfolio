@@ -234,7 +234,7 @@ export const Casestudynavi = () => {
                 If Navi expands into <strong>stocks/ETFs, advanced dashboards, and deeper gamification, it could evolve from a financial app into a true super-app for personal finance in India.</strong>
         </div>
 
-        <div className='text-center p-5 text-decoration-underline'>
+        {/* <div className='text-center p-5 text-decoration-underline'>
             <h1>BTS (Behind the Scenes)</h1>
             <img 
                     className='behind-the-scene img-fluid'
@@ -242,7 +242,7 @@ export const Casestudynavi = () => {
                     alt='behind_the_scene_img'
                     // style={{ height: "500px", objectFit: "cover" }}
             />
-        </div>
+        </div> */}
     </div>
     </>
   )

@@ -30,7 +30,7 @@ export const Apprecommendation = () => {
   <div className='p-md-5 p-3'>
     <h2 className='text-center text-decoration-underline'>App Recommendation</h2>
     <div  className='col'>
-      <div className='col-md-8 col-12 pt-5'>
+      <div className='pt-5'>
         <h4>Project Description</h4>
         <p className='mb-4 fs-5'>This project focuses on analysing mobile app data from the Apple App Store and Google Play Store. As a product analyst for a company that develops Android and iOS apps, our goal is to identify the types of apps most likely attract a large number of users.</p>
         <h4>Business Requirements</h4>
